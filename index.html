@@ -1,27 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en" style="width: 100%; height: 100%;">
 <head>
   <meta charset="utf-8">
   <title>Kekayan's Resume</title>
-  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 </head>
 <body style="width: 100%; height: 100vh; margin: 0;">
-  <canvas id="pdf-viewer" style="width: 100%; height: 100%;"></canvas>
-  <script>
-    const url = "https://raw.githubusercontent.com/ManishVangara/resume/main/Manish_Vangara_Resume_Data_Analyst_v1.pdf";
-    
-    pdfjsLib.getDocument(url).promise.then(pdf => {
-      pdf.getPage(1).then(page => {
-        var canvas = document.getElementById("pdf-viewer");
-        var context = canvas.getContext("2d");
-        var viewport = page.getViewport({ scale: 1.5 });
-
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-
-        page.render({ canvasContext: context, viewport: viewport });
-      });
-    });
-  </script>
+  <iframe src="https://drive.google.com/file/d/https://drive.google.com/file/d/1aD4oq9l0G0alAqTPMrDF4E0n4q4Zi1QT/view?usp=sharing/preview" width="100%" height="100%" frameborder="0"></iframe>
 </body>
-</html>
+</html5>
